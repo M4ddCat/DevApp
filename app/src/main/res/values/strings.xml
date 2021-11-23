@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DevApp</string>
+    <string name="lauchsecondtext">Это моё приложение.\nДелай хорошо.\nА плохо не делай.</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

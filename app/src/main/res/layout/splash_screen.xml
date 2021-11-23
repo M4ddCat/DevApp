@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    //фон
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="1500dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/background">
+            // ↑ я правильно понял, что нужна именно фотография?
+            // просто мне понравилась идея с градиентом из изначального
+            // приложения, и я решил её оставить :)
+        </ImageView>
+    </LinearLayout>
+    //Лого
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logoOnSplash"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:src="@mipmap/icon_white"
+            android:layout_weight="1"
+            android:layout_marginTop="200dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

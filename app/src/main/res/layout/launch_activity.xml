@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    //фон
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="1500dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/background" />
+        // ↑ я правильно понял, что нужна именно фотография?
+        // просто мне понравилась идея с градиентом из изначального
+        // приложения, и я решил её оставить :)
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logoOnLaunch"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_white" />
+    <TextView
+        android:id="@+id/textLaunch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:textColor="#E7DAFF"
+        android:text="Привет."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoOnLaunch" />
+    <TextView
+        android:id="@+id/textLaunch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/lauchsecondtext"
+        app:layout_constraintTop_toBottomOf="@id/textLaunch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#E7DAFF"
+        android:textSize="18dp"
+        />
+    <Button
+        android:id="@+id/button_launch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Войти в аккаунт"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Theme.AppCompat"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#A580DD"
+        android:onClick="login"
+        app:layout_constraintLeft_toLeftOf="@id/linearLayout"
+        app:layout_constraintRight_toRightOf="@id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textLaunch2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
